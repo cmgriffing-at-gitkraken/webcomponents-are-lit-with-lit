@@ -1,0 +1,18 @@
+- Intro
+- Implementations
+    - libgit2
+        - list language specific bindings
+        - no node implementation?? (look into it)
+        - maybe some examples
+    - nodegit
+    - raw git binary
+        - the challenges (tie this into a dev interview at some point)
+- How we use nodegit
+    - approved code snippets?
+- Why we wanted to migrate
+    - waterfall of changes
+- How we did it
+    - piece by piece
+        - git subfunction by git subfunction
+    - where we are now
+- How soon could we be done?

@@ -1,0 +1,20 @@
+#app {
+
+    background: black;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #149287
+    }
+    
+    a {
+        border-color: #149287;
+        
+        &:hover {
+            color: #149287;
+        }
+    }
+
+    li::marker {
+        color: #ba3cfd;
+    }
+}
