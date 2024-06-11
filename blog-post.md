@@ -1,6 +1,6 @@
 # Web Compoments are Lit with Lit
 
-We use [Lit](https://lit.dev) to create shared Web Components that we can use across our GitKraken DevEx Platform. This allows us to reduce repetition and keep our UIs consistent in aesthetics and functionality. Let's dig into Web Components, how they work, and why they exist.
+We use [Lit](https://lit.dev) to create shared Web Components that we can use across our [GitKraken DevEx platform](https://www.gitkraken.com/devex). This allows us to reduce repetition and keep our UIs consistent in aesthetics and functionality. Let's dig into Web Components, how they work, and why they exist.
 
 ## What Are Web Components?
 
@@ -139,4 +139,4 @@ As mentioned, Lit helps smooth out some of the things about Web Components that 
 
 ## How We Use Lit
 
-Here at GitKraken, we use Lit to share components across our entire platform. The most prominent example is the Commit Graph. This allows us to share functionality between our Desktop client and GitLens in VSCode. As we bring the Commit Graph into other projects, we will be able to keep the experience clean and consistent from a styling and functionality perspective.   
+Here at GitKraken, we use Lit to share components across our entire platform. The most prominent example is the Commit Graph. This allows us to share functionality between [GitKraken Desktop](https://www.gitkraken.com/git-client) and [GitLens for VSCode](https://www.gitkraken.com/gitlens). As we bring the Commit Graph into other projects, we will be able to keep the experience clean and consistent from a styling and functionality perspective.
