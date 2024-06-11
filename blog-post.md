@@ -12,13 +12,13 @@ Web Components are a broader term for a few specific specs and APIs.
 
 ## History
 
-Web Components date all the way 2011 where they were introduced at the Fronteers Conference in Amsterdam by Alex Russell. In that talk, Alex goes over the power of components and model-driven views. Then, in 2013, Google released Polymer as the first major library adopting the Web Component specs. This was massively influential since it was also the canonical implementation of Material Design components as well. By releasing Polymer, Google pushed for Web Components to be evaluated in real-world use cases which helped the W3C move the specifications along their standardization process. While Polymer is irrelevant today, it's impact on pushing forward the web as a platform cannot be overstated.
+Web Components date all the way back to 2011 where they were introduced at the Fronteers Conference in Amsterdam by Alex Russell. In that talk, Alex goes over the power of components and model-driven views. Then, in 2013, Google released Polymer as the first major library adopting the Web Component specs. This was massively influential since it was the canonical implementation of Material Design components as well. By releasing Polymer, Google pushed for Web Components to be evaluated in real-world use cases which helped the W3C move the specifications along their standardization process. While Polymer is irrelevant today, it's impact on pushing forward the web as a platform cannot be overstated.
 
 With the standard solidifying and Internet Explorer dropping significantly in usage by 2017, major companies were starting to take Web Components seriously. [Ionic](https://ionicframework.com/) released [Stencil](https://stenciljs.com/) as a way of making some of the rough edges easier to manage. Just a year later, Angular released a feature which was called "Angular Elements". With Angular Elements, you could write components in a familiar Angular syntax and export them as browser-native Custom Elements to be used interoperably with any framework that supports them. To get a feel for which frameworks consume Custom Elements the easiest you can see a list at [custom-elements-everywhere.com](https://custom-elements-everywhere.com/).
 
 ## The Anatomy of a Web Component
 
-Let's take a look at a very basic Web Component. This is just a simple countdown timer with a button to start the countdown and a display of how many seconds are left. The usage would look something like this:
+Let's take a look at a very basic Web Component. This is a simple countdown timer with a button to start the countdown and a display of how many seconds are left. The usage would look something like this:
 
 ```
 <countdown-timer seconds=20></countdown-timer>
@@ -119,7 +119,7 @@ Web Components are not inherently reactive. They do expose a callback you can us
 
 Lit is a library and set of tools that help smooth out some of those rough edges we mentioned. It was originally created by the Google Chrome team as part of the Polymer project's efforts, but now it lives independently of the Polymer project. It is also an incredibly small library clocking in at 5kb after minification and gzip.
 
-The main project is a [monorepo on GitHub](https://github.com/lit/lit) that includes the core building blocks of lit, lit-html, and lit-element. It also includes a framework specific wrapper for React, a library for localizing Lit components, and a couple starter boilerplates for JS and one for TS.
+The main project is a [monorepo on GitHub](https://github.com/lit/lit) that includes the core building blocks of `lit`, `lit-html`, and `lit-element`. It also includes a framework specific wrapper for React, a library for localizing Lit components, and a couple starter boilerplates for JS and one for TS.
 
 ## Why Lit?
 
@@ -139,4 +139,4 @@ As mentioned, Lit helps smooth out some of the things about Web Components that 
 
 ## How We Use Lit
 
-Here at GitKraken, we use Lit to share components across our entire platform. The most prominent example is the Commit Graph. This allows us to share functionality between our Desktop client and GitLens in VSCode. As we bring the Commit Graph into other projects, we will be able to keep the experience clean and consistent from a styling and functionality perspective. 
+Here at GitKraken, we use Lit to share components across our entire platform. The most prominent example is the Commit Graph. This allows us to share functionality between our Desktop client and GitLens in VSCode. As we bring the Commit Graph into other projects, we will be able to keep the experience clean and consistent from a styling and functionality perspective.   
