@@ -81,6 +81,7 @@ Not shown here are some other callbacks you might want to use:
 - `adoptedCallback` is unique to Web Components and doesn't have an analog to any of the common frameworks you might be familiar with. This callback fires when the browser accepts the Web Component into its "registry". The registry is what allows the browser to recognize the custom element by its tag, `countdown-timer`.
 
 Mentioned above, adding the component to the registry is a fairly simple process. You just assign the class to a string value using a `define` method like so:
+
 ```javascript
 window.customElements.define('countdown-timer', Countdown);
 ```
@@ -139,4 +140,18 @@ As mentioned, Lit helps smooth out some of the things about Web Components that 
 
 ## How We Use Lit
 
-Here at GitKraken, we use Lit to share components across our entire platform. The most prominent example is the Commit Graph. This allows us to share functionality between [GitKraken Desktop](https://www.gitkraken.com/git-client) and [GitLens for VSCode](https://www.gitkraken.com/gitlens). As we bring the Commit Graph into other projects, we will be able to keep the experience clean and consistent from a styling and functionality perspective.
+Here at GitKraken, we use Lit to share components across our entire platform such as [GitKraken Desktop](https://www.gitkraken.com/git-client) and [GitLens for VSCode](https://www.gitkraken.com/gitlens). Several components are focused on styling and functionality for common elements such as buttons, inputs, tooltips, and more. 
+
+![Screenshot of buttons in GitLens](./blog-assets/buttons.png)
+
+Beyond the basic elements, we have more interesting things like Menus, Popovers, and Avatars.
+
+![Screenshot of Avatars with a tooltip](./blog-assets/avatars.png)
+
+We even use Lit to power some of our common platform-specific components such as our pricing calculator, complexity indicator, and even our Launchpad.
+
+![Screenshot of Launchpad in GitKraken Desktop](./blog-assets/launchpad.png)
+
+## Wrapping Up
+
+That pretty much wraps things up. I hope you enjoyed learning about Web Components and how we use them at GitKraken. Hopefully, you are inspired to use Web Components in your applications to reduce duplication and keep your styling and functionality consistent.
