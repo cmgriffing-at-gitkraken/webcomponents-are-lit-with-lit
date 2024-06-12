@@ -78,7 +78,7 @@ After that, take notice of the `connectedCallback`. In Angular this could be tho
 Not shown here are some other callbacks you might want to use:
 - `disconnectedCallback` is the callback that fires when the component is removed from the DOM. This is where you would want to clean up any intervals or other things that have the potential to become memory leaks.
 - `attributeChangedCallback` is the callback that fires when the data attributes change. You can use this to update the state of the component from your application state.
-- `adoptedCallback` is unique to Web Components and doesn't have an analog to any of the common frameworks you might be familiar with. This callback fires when the browser accepts the Web Component into its "registry". The registry is what allows the browser to recognize the custom element by its tag, `countdown-timer`.
+- `adoptedCallback` is unique to Web Components and doesn't have an analog to any of the common frameworks you might be familiar with. This callback fires when the component is moved to a new HTML document using `adoptNode`. You probably won't need to use this unless you are dealing with iframes.
 
 Mentioned above, adding the component to the registry is a fairly simple process. You just assign the class to a string value using a `define` method like so:
 
