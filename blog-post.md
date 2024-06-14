@@ -20,7 +20,7 @@ With the standard solidifying and Internet Explorer dropping significantly in us
 
 Let's take a look at a very basic Web Component. This is a simple countdown timer with a button to start the countdown and a display of how many seconds are left. The usage would look something like this:
 
-```
+```html
 <countdown-timer seconds=20></countdown-timer>
 ```
 
